@@ -150,6 +150,10 @@ try:
     # Click the element
     element.click()
     print("Element with text 'Available' clicked.")
+    
+    text_to_find = "The site is congested due to heavy access"
+    refresh_until_not_found(text_to_find, sleep_time)
+
 except NoSuchElementException:
     print("Element with text 'Available' not found.")
 
